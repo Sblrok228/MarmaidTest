@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Roulette — Mermaid Lucky Game</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="bg">
+  <audio id="bgMusic" loop>
+    <source src="assets/casino.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="spinSfx">
+    <source src="assets/spin.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="jackpotSfx">
+    <source src="assets/jackpot.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brandRow">
+        <img class="avatar" src="assets/mermaid.jpg" alt="Mermaid">
+        <div class="brandTxt">
+          <div class="name">Roulette</div>
+          <div class="tag">Slow spin • rare prizes • BIG jackpot</div>
+        </div>
+      </div>
+
+      <div class="sideNav">
+        <a class="sideBtn" href="index.html">🏠 Hub</a>
+        <a class="sideBtn" href="slots.html">🎰 Slots</a>
+        <a class="sideBtn active" href="roulette.html">🎡 Roulette</a>
+        <a class="sideBtn" href="dice.html">🎲 Dice</a>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="topTabs">
+        <div>
+          <div class="bigTitle">Roulette</div>
+          <div class="subTitle">Neon wheel • readable labels • casino vibe</div>
+        </div>
+        <div class="tabRow">
+          <button class="musicBtn" id="musicBtn">🔇 Music OFF</button>
+        </div>
+      </div>
+
+      <div class="gameStage">
+        <div class="pointer"></div>
+        <canvas id="wheel" width="560" height="560"></canvas>
+        <button id="spinBtn" class="spinBtn">SPIN</button>
+      </div>
+    </main>
+  </div>
+
+  <div id="fxLayer"></div>
+  <script src="app.js"></script>
+  <script>MLG.initRoulette();</script>
+</body>
+</html>
+
+
+

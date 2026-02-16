@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Dice — Mermaid Lucky Game</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="bg">
+  <audio id="bgMusic" loop>
+    <source src="assets/casino.mp3" type="audio/mpeg">
+  </audio>
+  <audio id="jackpotSfx">
+    <source src="assets/jackpot.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brandRow">
+        <img class="avatar" src="assets/mermaid.jpg" alt="Mermaid">
+        <div class="brandTxt">
+          <div class="name">Dice</div>
+          <div class="tag">15s sneak • reveal • jackpot</div>
+        </div>
+      </div>
+
+      <div class="sideNav">
+        <a class="sideBtn" href="index.html">🏠 Hub</a>
+        <a class="sideBtn" href="slots.html">🎰 Slots</a>
+        <a class="sideBtn" href="roulette.html">🎡 Roulette</a>
+        <a class="sideBtn active" href="dice.html">🎲 Dice</a>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="topTabs">
+        <div>
+          <div class="bigTitle">Dice</div>
+          <div class="subTitle">Slow creep • then jackpot 💥</div>
+        </div>
+        <div class="tabRow">
+          <button class="musicBtn" id="musicBtn">🔇 Music OFF</button>
+        </div>
+      </div>
+
+      <div class="gameStage">
+        <div class="diceStage">
+          <div id="diceBig" class="diceBig">🎲</div>
+        </div>
+
+        <button id="diceBtn" class="spinBtn">ROLL</button>
+        <div class="hint">The dice comes closer for <b>15 seconds</b>…</div>
+      </div>
+    </main>
+  </div>
+
+  <div id="fxLayer"></div>
+  <script src="app.js"></script>
+  <script>MLG.initDice();</script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Mermaid Lucky Game</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="bg">
+  <audio id="bgMusic" loop>
+    <source src="assets/casino.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brandRow">
+        <img class="avatar" src="assets/mermaid.jpg" alt="Mermaid">
+        <div class="brandTxt">
+          <div class="name">Mermaid Lucky Game</div>
+          <div class="tag">Neon casino hub ✨</div>
+        </div>
+      </div>
+
+      <div class="sideNav">
+        <a class="sideBtn active" href="index.html">🏠 Hub</a>
+        <a class="sideBtn" href="slots.html">🎰 Slots</a>
+        <a class="sideBtn" href="roulette.html">🎡 Roulette</a>
+        <a class="sideBtn" href="dice.html">🎲 Dice</a>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="topTabs">
+        <div>
+          <div class="bigTitle">Mermaid Lucky Game</div>
+          <div class="subTitle">Choose a game, spin & win 💖</div>
+        </div>
+
+        <div class="tabRow">
+          <a class="tab" href="slots.html">🎰 Slots</a>
+          <a class="tab" href="roulette.html">🎡 Roulette</a>
+          <a class="tab" href="dice.html">🎲 Dice</a>
+          <button class="musicBtn" id="musicBtn">🔇 Music OFF</button>
+        </div>
+      </div>
+
+      <div class="panelGrid">
+        <section class="panel">
+          <div class="panelTitle">✨ Your neon casino hub</div>
+          <div>Pick a game above. Every spin can be a WIN.</div>
+
+          <div class="slogans">
+            <div class="s">DO YOU WANT TO WIN WITHOUT LOSING??</div>
+            <div class="s">CHOOSE ANY GAME!!!!</div>
+            <div class="s">YOUR PRIZES ARE WAITING FOR YOU</div>
+            <div class="s">ONE SPIN AND YOUR LIFE WILL CHANGE!!!</div>
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="panelTitle">🧜 Mermaid theme</div>
+          <div>Sea background + shells + bubbles + neon glow.</div>
+          <div style="height:10px"></div>
+          <div class="panelTitle">🎉 Jackpot FX</div>
+          <div>Big JACKPOT overlay + confetti + fireworks.</div>
+        </section>
+      </div>
+
+      <div class="gameStage">
+        <div class="hint">Tip: all media goes into <b>assets/</b></div>
+      </div>
+    </main>
+  </div>
+
+  <div id="fxLayer"></div>
+  <script src="app.js"></script>
+  <script>MLG.initHub();</script>
+  <img class="heroGirl" src="assets/girl.png">
+</body>
+</html>
+
+
+
+
+
+
